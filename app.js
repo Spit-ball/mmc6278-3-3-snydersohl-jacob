@@ -46,7 +46,4 @@ app.get('/api/city/:city', async (req, res) => {
     }
 })
 
-
-
-
 module.exports = app
