@@ -14,15 +14,6 @@ app.use(express.static('public'))
 
 // TODO: declare the GET route /api/city/:city
 
-// This endpoint should call getCityInfo and getJobs and 
-
-// the result as JSON.
-// The returned JSON object should have two keys:
-// cityInfo (with value of the getCityInfo function)
-// jobs (with value of the getJobs function)
-// If no city info or jobs are found,
-// the endpoint should return a 404 status
-
 app.get('/api/city/:city', async (req, res) => {
     const city = req.params.city
     const cityInfo = await appInfo.getCityInfo(city)
